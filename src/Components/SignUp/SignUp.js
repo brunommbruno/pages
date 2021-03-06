@@ -22,6 +22,8 @@ class SignUp extends Component {
   }
 
   render() {
+    document.title = "Bruno Bruno - Sign Up";
+
     const { password, password_check } = this.state;
 
     return (

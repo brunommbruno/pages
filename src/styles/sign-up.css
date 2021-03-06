@@ -52,3 +52,47 @@
   border: 2px solid tomato;
   transition: 0.4s;
 }
+
+@media only screen and (max-width: 1000px) {
+  .sign-up {
+    display: block;
+    padding: 3rem 4rem 2rem 4rem;
+  }
+
+  .sign-up .col {
+    margin: unset;
+    margin-bottom: 4rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .sign-up {
+    padding: 0;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .sign-up h1 {
+    padding-bottom: 2rem;
+  }
+
+  .sign-up p {
+    display: none;
+  }
+
+  .sign-up .form-box {
+    text-align: center;
+    padding: 1rem;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+  }
+
+  .sign-up .form-box .text-muted {
+    color: black !important;
+    font-weight: bold;
+  }
+
+  .sign-up .col {
+    margin-bottom: 1rem;
+  }
+}
