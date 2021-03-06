@@ -5,9 +5,12 @@
   background-image: url("https://i.imgur.com/IOHQQHk.png");
   height: 100vh;
   display: flex;
-  align-items: center;
   color: white;
   font-family: "Monda", sans-serif;
+}
+
+.sign-up .description {
+  top: 10%;
 }
 
 .sign-up .description h1 {
@@ -21,10 +24,11 @@
 }
 
 .sign-up .form-box {
-  background-color: white;
+  background-color: rgba(252, 252, 252, 0.836);
   padding: 2rem;
   border-radius: 1rem;
   color: black;
+  top: 5%;
 }
 
 .sign-up button {
@@ -37,4 +41,5 @@
   background-color: white;
   color: tomato;
   border: 2px solid tomato;
+  transition: 0.4s;
 }
