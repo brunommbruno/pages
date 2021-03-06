@@ -5,6 +5,7 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 
 import Nav from "./Components/Nav";
 import Home from "./Components/Home";
+import SignUp from "./Components/SignUp/SignUp";
 
 class App extends Component {
   render() {
@@ -15,6 +16,9 @@ class App extends Component {
           <Switch>
             <Route exact path="/">
               <Home />
+            </Route>
+            <Route exact path="/sign-up">
+              <SignUp />
             </Route>
           </Switch>
         </>
