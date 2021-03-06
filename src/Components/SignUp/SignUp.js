@@ -1,13 +1,11 @@
 import { Component } from "react";
-import { Form, Col } from "react-bootstrap";
+import { Form, Col, Button } from "react-bootstrap";
 
 class SignUp extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      first_name: "",
-      last_name: "",
       email: "",
       password: "",
       password_check: "",
@@ -16,14 +14,7 @@ class SignUp extends Component {
   }
 
   render() {
-    const {
-      first_name,
-      last_name,
-      email,
-      password,
-      password_check,
-      tick_box,
-    } = this.state;
+    const { username, email, password, password_check, tick_box } = this.state;
 
     return (
       <div className="sign-up">
@@ -37,14 +28,30 @@ class SignUp extends Component {
         <Col className="form-box">
           {" "}
           <Form>
-            <Form.Group controlId="exampleForm.ControlInput1">
+            <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="name@example.com" />
+              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Text className="text-muted">
+                We'll never share your email with anyone else.
+              </Form.Text>
             </Form.Group>
-            <Form.Group controlId="exampleForm.ControlTextarea1">
-              <Form.Label>Example textarea</Form.Label>
-              <Form.Control as="textarea" rows={3} />
+            <Form.Group controlId="formBasicPassword">
+              <Form.Label>Password</Form.Label>
+              <Form.Control type="password" placeholder="Password" />
             </Form.Group>
+            <Form.Group controlId="formBasicPasswordCheck">
+              <Form.Label>Confirm Password</Form.Label>
+              <Form.Control type="password" placeholder="Confirm Password" />
+            </Form.Group>
+            <Form.Group controlId="formBasicCheckbox">
+              <Form.Check
+                type="checkbox"
+                label="Receive Emails Regarding New Features"
+              />
+            </Form.Group>
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
           </Form>
         </Col>
       </div>

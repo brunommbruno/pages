@@ -26,3 +26,15 @@
   border-radius: 1rem;
   color: black;
 }
+
+.sign-up button {
+  background-color: tomato;
+  border: 2px solid transparent;
+}
+
+.sign-up button:hover {
+  font-weight: bold;
+  background-color: white;
+  color: tomato;
+  border: 2px solid tomato;
+}
