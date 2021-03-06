@@ -4,6 +4,7 @@ import { Component } from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
 
 import Nav from "./Components/Nav";
+import Home from "./Components/Home";
 
 class App extends Component {
   render() {
@@ -11,7 +12,11 @@ class App extends Component {
       <HashRouter basename="/">
         <>
           <Nav />
-          <Switch></Switch>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+          </Switch>
         </>
       </HashRouter>
     );

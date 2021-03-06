@@ -3,7 +3,7 @@ import logo from "../img/logo.png";
 
 const Nav = () => {
   return (
-    <Navbar bg="white" variant="light">
+    <Navbar bg="white" variant="light" fixed="top">
       <Navbar.Brand href="#home">
         <img
           alt=""
