@@ -5,9 +5,20 @@ const Home = () => {
     <div className="home">
       <section className="projects">
         <ProjectCard
-          title="Test Project"
-          description="This is a test project description"
-          image="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/ael6vr3wsyatqcrzxzg1.jpg"
+          title="Sign Up Page"
+          description="Simple themed sign up page with password re-type verification"
+          image="https://i.gyazo.com/a9c179b48e934a191b6db6b92886e2cc.png"
+          route="sign-up"
+        />
+        <ProjectCard
+          title="Sign Up Page"
+          description="Simple themed sign up page with password re-type verification"
+          image="https://i.gyazo.com/a9c179b48e934a191b6db6b92886e2cc.png"
+        />
+        <ProjectCard
+          title="Sign Up Page"
+          description="Simple themed sign up page with password re-type verification"
+          image="https://i.gyazo.com/a9c179b48e934a191b6db6b92886e2cc.png"
         />
       </section>
     </div>

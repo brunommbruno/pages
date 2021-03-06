@@ -7,6 +7,7 @@
   color: white;
   font-family: "Monda", sans-serif;
   margin-top: 2rem;
+  height: 100vh;
 }
 
 .sign-up .description {
@@ -21,6 +22,7 @@
 
 .sign-up .col {
   margin: 5rem;
+  height: fit-content;
 }
 
 .sign-up .form-box {
