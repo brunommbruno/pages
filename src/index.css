@@ -1,5 +1,6 @@
 @import "./styles/home.css";
 @import "./styles/sign-up.css";
+@import "./styles/reservation.css";
 
 body {
   margin: 0;
