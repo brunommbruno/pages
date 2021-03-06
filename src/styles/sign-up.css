@@ -3,10 +3,10 @@
 
 .sign-up {
   background-image: url("https://i.imgur.com/IOHQQHk.png");
-  height: 100vh;
   display: flex;
   color: white;
   font-family: "Monda", sans-serif;
+  margin-top: 2rem;
 }
 
 .sign-up .description {
@@ -29,6 +29,13 @@
   border-radius: 1rem;
   color: black;
   top: 5%;
+}
+
+.sign-up .password-invalid {
+  border: 2px solid tomato;
+}
+.sign-up .password-invalid-p {
+  color: tomato;
 }
 
 .sign-up button {
